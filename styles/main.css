@@ -55,8 +55,11 @@ html {
  
  .links-container .navbar-link:hover {
      color: rgb(233,50,117);
->>>>>>> assignment-9-AddCollection
  }
+.navbar-link:active {
+    color: rgb(233,50,117);
+    background-color: white;
+}
 
 .navbar .links-container {
     display: table;
@@ -82,45 +85,4 @@ html {
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-}
-
-.links-container .navbar-link:hover {
-    color: rgb(233,50,117);
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 64rem;
-}
-
-/* Medium and small screens (640px) */
-@media (min-width: 40rem) {
-    html {font-size: 112%}
-    
-    .column {
-        float: left;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .column.full {width: 100%}
-    .column.two.thirds {width: 66.7%}
-    .column.half {width: 50%}
-    .column.third {width: 33%}
-    .column.fourth {width: 25%}
-    .column.flow.opposite {float: right}
-}
-
- /* Large screens (1024px) */
-@media (min-width: 64rem) {
-    hmtl {font-size: 120%}
-}
-
-.clearfix:before, clearfix:after {
-    content: " ";
-    display: table;
-
-}
-
-.clearfix:after {
-    clear:both;
 }
