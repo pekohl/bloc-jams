@@ -55,8 +55,11 @@ html {
  
  .links-container .navbar-link:hover {
      color: rgb(233,50,117);
->>>>>>> assignment-9-AddCollection
  }
+.navbar-link:active {
+    color: rgb(233,50,117);
+    background-color: white;
+}
 
 .navbar .links-container {
     display: table;
@@ -84,9 +87,7 @@ html {
     cursor: pointer;
 }
 
-.links-container .navbar-link:hover {
-    color: rgb(233,50,117);
-}
+
 
 .container {
     margin: 0 auto;
