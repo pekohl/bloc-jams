@@ -87,8 +87,6 @@ html {
     cursor: pointer;
 }
 
-
-
 .container {
     margin: 0 auto;
     max-width: 64rem;
@@ -125,3 +123,4 @@ html {
 .clearfix:after {
     clear:both;
 }
+
