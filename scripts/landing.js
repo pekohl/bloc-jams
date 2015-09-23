@@ -35,6 +35,7 @@ var animatePoints = function () {
 //        revealFirstPoint();
 //        revealSecondPoint();
 //        revealThirdPoint();  
+
 };
 
 
