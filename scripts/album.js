@@ -87,17 +87,31 @@ var currentPlayingSong = null;
 
 window.onload = function() {
     setCurrentAlbum(albumPicasso);
-    
-    var findParentByClassName = function(element, targetClass) {
-        var currentParent = element.parentElement;
-        while (currentParent.className != targetClass) {
-            currentParent = currentParent.parentElement;
-        }
 
-        return currentParent;
+var child = document.getElementsByClassName('album-view-title')[0];
+var noParent = document.querySelector('html');
+    
+var findParentByClassName = function(element, targetClass) {
+     var currentParent = element.parentElement;
+
+        if (currentParent) {
+            while (currentParent.className && currentParent.className != targetClass) {
+                currentParent = currentParent.parentElement;
+            }
+
+        if (currentParent.className == targetClass) {
+            return currentParent;
+            } else {
+                alert("No parent with that class name found.");
+            }
+        } else {
+            alert("No parent found.");
+        }
     };
 
-    var getSongItem = function(element){
+    findParentByClassName(child, 'album-view');
+
+var getSongItem = function(element){
         switch (element.className) {
             case 'album-song-button':
             case 'ion-play':
